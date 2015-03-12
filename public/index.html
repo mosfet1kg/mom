@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <title>WebRTC: Still photo capture demo</title>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="css/main.css" type="text/css" media="all">
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.3.4.js"></script>
+    <script src="js/adapter.js"></script>
+    <script src="js/capture.js">
+    </script>
+</head>
+<body>
+<div class="contentarea">
+    <h1>
+       A Page for Publisher!
+    </h1>
+    <div class="visuals">
+        <div class="camera">
+            <video id="video">Video stream not available.</video> <button id="startbutton">Take photo</button>
+        </div>
+        <canvas id="canvas">
+        </canvas>
+        <div class="output">
+            <img id="photo" alt="photo">
+        </div>
+    </div>
+</div>
+</body>
+</html>
