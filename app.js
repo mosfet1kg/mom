@@ -23,3 +23,7 @@ io.sockets.on('connection', function(socket){
         socket.to(data.channel).emit('subscribe', data.img);
     });
 });
+
+app.get('/helloworld', function(req, res){
+    res.send('hello world!');
+});

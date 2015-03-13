@@ -60,7 +60,7 @@ function startup() {
             video.play();
         },
         function(err) {
-            console.log("An error occured! " + err);
+            console.log("An error occurred! " + err);
         }
     );
 
@@ -83,12 +83,12 @@ function startup() {
             canvas.setAttribute('height', height);
             streaming = true;
         }
-    }, false);
+    });
 
     startbutton.addEventListener('click', function(ev){
         takepicture();
         ev.preventDefault();
-    }, false);
+    });
 }
 
 // Fill the photo with an indication that none has been
